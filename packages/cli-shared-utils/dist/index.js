@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.log=void 0;const log=function(a){console.log(a)};exports.log=log;

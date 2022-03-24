@@ -1,7 +1,3 @@
-'use strict'
+import {log} from '@yui-demo/cli-shared-utils';
 
-module.exports = cli
-
-function cli () {
-  // TODO
-}
+log('hello world');

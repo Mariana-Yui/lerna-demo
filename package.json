@@ -15,8 +15,8 @@
     "b": "lerna exec -- babel src -d dist --config-file ../../babel.config.js"
   },
   "lint-staged": {
-    "*.(js|ts?x)": [
-      "standard --fix",
+    "*.js": [
+      "eslint --fix",
       "git add"
     ]
   },
@@ -28,6 +28,7 @@
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "babel-preset-minify": "^0.5.1",
+    "eslint": "^8.11.0",
     "husky": "^7.0.4",
     "i": "^0.3.7",
     "lerna": "^4.0.0",

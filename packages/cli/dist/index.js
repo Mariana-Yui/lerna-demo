@@ -1,0 +1,1 @@
+"use strict";var _cliSharedUtils=require("@yui-demo/cli-shared-utils");(0,_cliSharedUtils.log)("hello world");
