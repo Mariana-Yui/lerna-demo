@@ -49,3 +49,4 @@
 2. [Lerna的依赖管理及hoisting浅析](https://yrq110.me/post/tool/how-lerna-manage-package-dependencies/)
 3. [新版本husky配置不生效](https://www.cnblogs.com/ly0612/p/15545803.html)
 4. [Environment variable 'HUSKY_GIT_PARAMS' is not available globally #840](https://github.com/typicode/husky/issues/840)
+5. [yarn 指令总览](http://www.febeacon.com/lerna-docs-zh-cn/routes/commands/)
