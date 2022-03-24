@@ -5,13 +5,13 @@
   "author": "denislin <denislin@tencent.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/cli-shared-utils.js",
+  "main": "index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

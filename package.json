@@ -9,7 +9,10 @@
   "scripts": {
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint --edit $1"
+    "commitlint": "commitlint --edit $1",
+    "i": "lerna bootstrap",
+    "p": "npm run b && lerna publish",
+    "b": "lerna exec -- babel src -d dist --config-file ../../babel.config.js"
   },
   "lint-staged": {
     "*.(js|ts?x)": [
@@ -18,8 +21,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "babel-preset-minify": "^0.5.1",
     "husky": "^7.0.4",
     "i": "^0.3.7",
     "lerna": "^4.0.0",

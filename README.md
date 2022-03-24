@@ -1,4 +1,5 @@
-
+## 引言
+该文档记录按照referrence中[基于 Lerna 管理 packages 的 Monorepo 项目最佳实践](https://juejin.cn/post/6844903911095025678#heading-2)的教程操作, 对教程中描述不详细或者过时的内容进行记录以及修复
 1. `lerna init`: 生成lerna.json, package.json和packages文件夹
 2. `lerna create`: 往packages下添加package
 3. `lerna add`: 给packages/*全部安装依赖, `--scope`单独安装, 可以将packages下的package作为另一个package的依赖 默认使用`npm`, 在lerna.json中添加`"npmClient": "yarn"`使用yarn安装, 运行完会发现包是安装在packages下的
@@ -38,6 +39,13 @@
 }
 ```
 
+## 提交规范
+1. 旧版本4.3.8之前husky配置可以通过`.huksyrc`或者在`package.json`配置, 新版本需要俺referrence 3中配置
+2. `commitlint -E HUSKY_GIT_PARAMS`对新版本husky会报错, 参照referrence 4, 需要改成`commitlint --edit $1 $2..."
+
+
 ## reference
 1. [基于 Lerna 管理 packages 的 Monorepo 项目最佳实践](https://juejin.cn/post/6844903911095025678#heading-2)
 2. [Lerna的依赖管理及hoisting浅析](https://yrq110.me/post/tool/how-lerna-manage-package-dependencies/)
+3. [新版本husky配置不生效](https://www.cnblogs.com/ly0612/p/15545803.html)
+4. [Environment variable 'HUSKY_GIT_PARAMS' is not available globally #840](https://github.com/typicode/husky/issues/840)
