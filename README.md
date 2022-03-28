@@ -21,7 +21,7 @@
 }
 ```
 使用`lerna bootstrap --hoist`搭配`"npmClient": "yarn"`会报错: **--hoist is not supported with --npm-client=yarn, use yarn workspaces instead**
-此时就需要使用yarn workspace，并在lerna中开启该功能时，lerna bootstrap命令由`yarn install`代理，等价于在workspace的根目录下执行`yarn install`
+此时就需要使用yarn workspace，并在lerna中开启该功能时，lerna bootstrap命令由`yarn install`代理，等价于在workspace的根目录下执行`yarn install`, 记得把`lerna.json`的`"bootstrap": {"hoist": true}`删掉
 相关配置:
 `lerna.json`
 ```json
